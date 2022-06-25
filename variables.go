@@ -14,6 +14,8 @@ var (
 	studentGrade int    = 4
 )
 
+var Q string = "this is exported" //this variable can be accessed outside this package
+
 func main() {
 
 	/*declaring a varibale*/
@@ -43,4 +45,12 @@ func main() {
 	fmt.Println(a)
 	//variables from variable block above
 	fmt.Println(studentName, studentGrade)
+
+	fmt.Println(Q)
 }
+
+/*
+remember!, when variables are declared
+at the package level and are named with uppercase as in line 17,
+they are exported and can be used in other packages
+*/
