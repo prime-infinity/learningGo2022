@@ -6,9 +6,9 @@ func main() {
 	var i int = 32              //declare this variable as an integer
 	fmt.Printf("%v,%T\n", i, i) //print the value and type
 
-	var f float32  //initialise another variable of type float
-	f = float32(i) //case int i into a type of float32 and assign it to f
-	fmt.Printf("%v,%T", f, f)
+	var f float32             //initialise another variable of type float
+	f = float32(i)            //case int i into a type of float32 and assign it to f
+	fmt.Printf("%v,%T", f, f) //print the value and type, notice that the type has been changed into float32
 
 }
 
