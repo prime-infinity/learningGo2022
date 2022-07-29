@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 /*
-	functions can also return data from them
-	to make them return data, we simply sepcify
+	functions can also return data from them.
+	to make them return data, we simply specify
 	the type of data we are expecting the function to
 	return after before the "{" bracket
 	example below
