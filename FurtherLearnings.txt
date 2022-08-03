@@ -2,3 +2,4 @@
 #array of arrays
 #short circuiting
 #nested functions
+#checking if pointers are <nil> in arguements
