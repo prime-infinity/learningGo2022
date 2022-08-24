@@ -35,6 +35,21 @@ func cycleWords(words []string, fon func(string)) {
 
 }
 
+//update..24 august
+
+/*
+	when passing args of the same type,
+	we can use the below syntax
+*/
+
+func multipleArgsOld(one int, two int, three int) {
+	//the more verbose way, to directly specify all
+	///the types,even though the are the same
+}
+func multipleArgsOldNew(one, two, three int) {
+	//the modern way, go understands
+}
+
 func main() {
 
 	//we call the function with its string arguement
@@ -49,4 +64,5 @@ func main() {
 	words := []string{"my", "name", "is", "omni"}
 
 	cycleWords(words, say)
+
 }
