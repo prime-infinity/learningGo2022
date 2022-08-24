@@ -36,6 +36,18 @@ func giveFirstAndLastOfStringSlice(s []string) (string, string) {
 	return first[0], last[0]
 }
 
+//update..24 august
+/*
+	we can also return pointers to values
+	in the below function, we are returning a
+	pointer to an integer
+*/
+
+func returnSome(value int) *int {
+	return &value
+	//return the address of the value
+}
+
 func main() {
 	number := double(15.3)
 	fmt.Println(number)
@@ -47,5 +59,9 @@ func main() {
 	//accepting multiple return values with a "," seperated assignment
 	first, last := giveFirstAndLastOfStringSlice(theSlice)
 	fmt.Println(first, last)
+
+	//update..24 august
+	value := returnSome(5)
+	fmt.Println(*value) //derefrenced
 
 }
