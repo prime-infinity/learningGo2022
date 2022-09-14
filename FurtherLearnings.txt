@@ -5,3 +5,4 @@
 #checking if pointers are <nil> in arguements
 #more on panics and recover
 #more on variatic parameters in functions
+#reseach alot more on interfaces
