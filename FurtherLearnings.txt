@@ -6,3 +6,4 @@
 #more on panics and recover
 #more on variatic parameters in functions
 #reseach alot more on interfaces
+#difference between a mutex and a RWmutex
