@@ -32,6 +32,7 @@ func main() {
 		//position of the arrow
 
 		ch <- 42
+		close(ch)
 		wg.Done()
 	}(ch)
 	wg.Wait()
