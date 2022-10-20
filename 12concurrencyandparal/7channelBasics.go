@@ -26,11 +26,24 @@ func main() {
 	wg.Add(2)
 	go func() {
 		i := <-ch
+
+		/*
+			the above syntax receives a message that was passed
+			into the channel and stores the message in a variable "i"
+			when the channel declaration is onthe right side
+		*/
+
 		fmt.Println(i)
 		wg.Done()
 	}()
 	go func() {
 		ch <- 42
+
+		/*
+			the above syntax sends a message into the channel,
+			when the channel declaration is on the left side
+		*/
+
 		wg.Done()
 	}()
 	wg.Wait()
